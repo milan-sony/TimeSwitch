@@ -22,11 +22,13 @@
 
 .head-text {
     font-size: 64px;
-    font-weight: 700;
     letter-spacing: 2px;
     text-transform: capitalize;
     color: #6C63FF;
     margin: 0;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
     padding-bottom: 20px;
 }
 
@@ -64,29 +66,13 @@
     /* cursor: var(--cursor-icon), auto; */
 }
 
-.contact-btn {
-    padding: 10px 20px;
-    outline: none;
-    border: none;
-    border: 1px solid var(--black-color);
-    border-radius: 12px;
-    color: var(--black-color);
-    text-align: center;
-    text-transform: capitalize;
-    font-family: var(--primary-font);
-    letter-spacing: 2px;
-    transition-duration: 0.4s ease;
-    cursor: var(--cursor-icon), auto;
-    background: none;
-    text-decoration: none;
-    list-style-type: none;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.contact-btn:hover {
-    outline: none;
-    border: 1px solid var(--black-color);
-    color: var(--white-color);
-    background-color: var(--black-color);
-    cursor: var(--cursor-icon), auto;
+.hero-img {
+    width: 500px;
+    height: auto;
 }
