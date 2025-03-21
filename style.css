@@ -78,17 +78,19 @@
 }
 
 .clock {
+    margin: 0;
     color: var(--purple-color);
     font-weight: 900;
     font-family: var(--time-font);
-    font-size: 48px;
+    /* font-size: 48px; */
 }
 
 .clock2 {
+    margin: 0;
     color: var(--purple-color);
     font-weight: 900;
     font-family: var(--time-font);
-    font-size: 48px;
+    /* font-size: 48px; */
 }
 
 /* Custom Media Query */
