@@ -1,10 +1,11 @@
 {
     "name": "TimeSwitch",
     "short_name": "TimeSwitch",
-    "start_url": "./192x192",
+    "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
+    "description": "A lightweight niche web app that instantly coverts time from 24 hour format to 12 hour format",
     "icons": [
         {
             "src": "./assets/images/android-chrome-192x192.png",
