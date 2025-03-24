@@ -1,5 +1,5 @@
 :root {
-    --black-black: #333333;
+    --black-color: #333333;
     --white-color: #f5f5f5;
     --purple-color: #6C63FF;
 
@@ -7,6 +7,8 @@
     --tertiary-font: "Kalam", cursive;
     --time-font: "Orbitron", sans-serif;
 }
+
+/* index page */
 
 .hero-page {
     background-color: var(--white-color);
@@ -35,7 +37,7 @@
     font-size: 18px;
     font-weight: 500;
     font-family: var(--tertiary-font);
-    color: var(--black-black);
+    color: var(--black-color);
     margin: 0;
     padding-bottom: 20px;
 }
@@ -89,6 +91,72 @@
     font-weight: 900;
     font-family: var(--primary-font);
 }
+
+/* 24 to 12 page */
+.tftotw-page {
+    background-color: var(--white-color);
+}
+
+.tftotw-contents {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tftotw-head {
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: var(--purple-color);
+    margin: 0;
+    font-family: var(--time-font);
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+
+input[type=text] {
+    border-radius: 20px;
+    border: 1px solid var(--black-color);
+    color: var(--purple-color);
+    width: 350px;
+    height: 30px;
+    padding-left: 10px;
+    font-family: var(--time-font);
+}
+
+input[type=text]:focus {
+    outline: none;
+    border: 1px solid var(--black-color);
+    color: var(--purple-color);
+    font-family: var(--time-font);
+}
+
+.timeconvert-btn {
+    width: 80px;
+    height: 30px;
+    background-color: var(--purple-color);
+    color: var(--white-color);
+    text-align: center;
+    text-transform: capitalize;
+    font-family: var(--primary-font);
+    outline: none;
+    border-radius: 12px;
+    transition-duration: 0.4s ease;
+    border: 1px solid var(--purple-color);
+    text-decoration: none;
+    list-style-type: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    margin-top: 20px;
+}
+
+.timeconvert-btn:hover {
+    background: none;
+    color: var(--purple-color);
+    border: 1px solid var(--purple-color);
+}
+
 
 /* Custom Media Query */
 /* small devices */
