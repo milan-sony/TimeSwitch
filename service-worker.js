@@ -1,9 +1,11 @@
 const CACHE_NAME = 'my-app-cache-v1';
 const urlsToCache = [
     './index.html',
-    './convert.html',
+    './convert24to12.html',
+    './convert24to12.html',
     './style.css',
     './script.js',
+    './script2.js',
     './assets/images/android-chrome-192x192.png',
     './assets/images/android-chrome-512x512.png'
 ];
