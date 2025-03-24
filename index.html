@@ -48,7 +48,8 @@
                         <span id="clock2" class="clock2"></span> to 12 hour format <span id="clock"
                             class="clock"></span>
                     </p>
-                    <button class="convert-btn" id="convert">Convert</button>
+                    <button class="convert-btn" id="convert">Convert 24 hr to 12 hr</button>
+                    <button class="convert-btn" id="convert2">Convert 12 hr to 24 hr</button>
                 </div>
                 <div class="col-lg-6 timer-container">
                     <img class="img-fluid hero-img" src="./assets/images/earth-hour.png" alt="image">
@@ -65,7 +66,11 @@
     <!-- Custom JS -->
     <script>
         document.getElementById("convert").onclick = function () {
-            window.location.href = "./convert.html"
+            window.location.href = "./convert24to12.html"
+        }
+
+        document.getElementById("convert2").onclick = function () {
+            window.location.href = "./convert12to24.html"
         }
 
         function updateClock() {
