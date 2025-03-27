@@ -34,6 +34,56 @@ function convertTime() {
     }
 }
 
+function updateClock() {
+    const now = new Date();
+    let hours = now.getHours();
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
+
+    // Determine AM or PM suffix
+    const ampm = hours >= 12 ? 'PM' : 'AM';
+
+    // Convert to 12-hour format
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+
+    // Format minutes and seconds to always be two digits
+    const formattedMinutes = String(minutes).padStart(2, '0');
+    const formattedSeconds = String(seconds).padStart(2, '0');
+
+    // Construct the time string
+    const timeString = `${String(hours).padStart(2, '0')}:${formattedMinutes}:${formattedSeconds} ${ampm}`;
+
+    // Update the clock display
+    document.getElementById('clock').textContent = timeString;
+}
+
+// Update the clock every second
+setInterval(updateClock, 1000);
+updateClock(); // Initial call to set the clock immediately
+
+function updateClock2() {
+    const now = new Date();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
+
+    // Format hours, minutes, and seconds to always be two digits
+    const formattedHours = String(hours).padStart(2, '0');
+    const formattedMinutes = String(minutes).padStart(2, '0');
+    const formattedSeconds = String(seconds).padStart(2, '0');
+
+    // Construct the time string in 24-hour format
+    const timeString = `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+
+    // Update the clock display
+    document.getElementById('clock2').textContent = timeString;
+}
+
+// Update the clock every second
+setInterval(updateClock2, 1000);
+updateClock2(); // Initial call to set the clock immediately
+
 // Event listener for button click
 document.getElementById("convertButton").addEventListener("click", convertTime);
 

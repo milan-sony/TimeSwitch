@@ -80,18 +80,43 @@
     height: auto;
 }
 
+.clocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.to{
+    margin: 0;
+    font-size: 36px;
+    text-align: center;
+    font-family: var(--tertiary-font);
+    font-weight: 700;
+    color: var(--white-color);
+}
+
 .clock {
     margin: 0;
     color: var(--purple-color);
     font-weight: 900;
-    font-family: var(--primary-font);
+    font-family: var(--time-font);
+    font-size: 48px;
 }
 
 .clock2 {
     margin: 0;
     color: var(--purple-color);
     font-weight: 900;
-    font-family: var(--primary-font);
+    font-family: var(--time-font);
+    font-size: 48px;
+}
+
+.time-convert{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 }
 
 /* 24 to 12 page */
@@ -154,8 +179,6 @@ input[type=text]:focus {
     text-decoration: none;
     list-style-type: none;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .timeconvert-btn:hover {
@@ -213,6 +236,17 @@ input[type=text]:focus {
         width: 100px;
         height: auto;
     }
+
+    .time-convert{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .clocks {
+        display: none;
+    }
 }
 
 @media (max-width: 576px) {
@@ -236,10 +270,26 @@ input[type=text]:focus {
     }
 
     .hero-img {
-        /* margin-top: 20px;
-        width: 150px;
-        height: auto; */
         display: none;
+    }
+
+    .time-convert{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .clocks{
+        margin-bottom: 40px;
+    }
+
+    .clock{
+        font-size: 32px;
+    }
+
+    .clock2{
+        font-size: 32px;
     }
 }
 
@@ -269,6 +319,18 @@ input[type=text]:focus {
         width: 300px;
         height: auto;
         display: none;
+    }
+
+    .clocks{
+        margin-bottom: 40px;
+    }
+
+    .clock{
+        font-size: 36px;
+    }
+
+    .clock2{
+        font-size: 36px;
     }
 }
 
