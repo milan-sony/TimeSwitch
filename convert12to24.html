@@ -25,11 +25,20 @@
     <div class="container-fluid timeconvert-page">
         <div class="container timeconvert-contents">
             <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="timeconvert-head">Convert 12 Hour to 24 Hour Time</h2>
-                    <input type="text" id="timeInput" placeholder="Enter time in 12-hour format (HH:MM AM/PM)"> <br>
-                    <button class="timeconvert-btn" id="convertButton">Convert</button> <br>
-                    <span id="result" class="converted-result"></span>
+                <div class="col-lg-6">
+                    <div class="clocks">
+                        <span id="clock" class="clock"></span>
+                        <p class="to">to</p>
+                        <span id="clock2" class="clock2"></span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="time-convert">
+                        <h2 class="timeconvert-head">Convert 12 Hour to 24 Hour Time</h2>
+                        <input type="text" id="timeInput" placeholder="Enter time in 12-hour format (HH:MM AM/PM)"> <br>
+                        <button class="timeconvert-btn" id="convertButton">Convert</button> <br>
+                        <span id="result" class="converted-result"></span>
+                    </div>
                 </div>
             </div>
         </div>

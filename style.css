@@ -87,7 +87,7 @@
     align-items: center;
 }
 
-.to{
+.to {
     margin: 0;
     font-size: 36px;
     text-align: center;
@@ -112,7 +112,7 @@
     font-size: 48px;
 }
 
-.time-convert{
+.time-convert {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,7 +150,7 @@ input[type=text] {
     border: 1px solid var(--black-color);
     color: var(--purple-color);
     width: 350px;
-    height: 30px;
+    height: 40px;
     padding-left: 10px;
     font-family: var(--time-font);
     font-weight: 700;
@@ -166,7 +166,7 @@ input[type=text]:focus {
 
 .timeconvert-btn {
     width: 80px;
-    height: 30px;
+    height: 40px;
     background-color: var(--purple-color);
     color: var(--white-color);
     text-align: center;
@@ -237,7 +237,7 @@ input[type=text]:focus {
         height: auto;
     }
 
-    .time-convert{
+    .time-convert {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -273,22 +273,22 @@ input[type=text]:focus {
         display: none;
     }
 
-    .time-convert{
+    .time-convert {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .clocks{
+    .clocks {
         margin-bottom: 40px;
     }
 
-    .clock{
+    .clock {
         font-size: 32px;
     }
 
-    .clock2{
+    .clock2 {
         font-size: 32px;
     }
 }
@@ -321,15 +321,15 @@ input[type=text]:focus {
         display: none;
     }
 
-    .clocks{
+    .clocks {
         margin-bottom: 40px;
     }
 
-    .clock{
+    .clock {
         font-size: 36px;
     }
 
-    .clock2{
+    .clock2 {
         font-size: 36px;
     }
 }
