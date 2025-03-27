@@ -16,20 +16,6 @@
     animation: gradient-animation 12s ease infinite;
 }
 
-@keyframes gradient-animation {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 .hero-contents {
     width: 100%;
     height: 100vh;
@@ -110,7 +96,9 @@
 
 /* 24 to 12 page */
 .timeconvert-page {
-    background-color: var(--white-color);
+    background: linear-gradient(300deg, #6c63ff, #000000);
+    background-size: 120% 120%;
+    animation: gradient-animation 12s ease infinite;
 }
 
 .timeconvert-contents {
@@ -140,6 +128,7 @@ input[type=text] {
     height: 30px;
     padding-left: 10px;
     font-family: var(--time-font);
+    font-weight: 700;
 }
 
 input[type=text]:focus {
@@ -147,6 +136,7 @@ input[type=text]:focus {
     border: 1px solid var(--black-color);
     color: var(--purple-color);
     font-family: var(--time-font);
+    font-weight: 700;
 }
 
 .timeconvert-btn {
@@ -179,6 +169,21 @@ input[type=text]:focus {
     font-weight: 700;
     font-size: 18px;
     color: var(--purple-color);
+}
+
+/* Background animation */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* Custom Media Query */
