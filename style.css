@@ -98,18 +98,20 @@
 
 .clock {
     margin: 0;
-    color: var(--purple-color);
+    color: var(--white-color);
     font-weight: 900;
     font-family: var(--time-font);
     font-size: 48px;
+    letter-spacing: 10px;
 }
 
 .clock2 {
     margin: 0;
-    color: var(--purple-color);
+    color: var(--white-color);
     font-weight: 900;
     font-family: var(--time-font);
     font-size: 48px;
+    letter-spacing: 10px;
 }
 
 .time-convert {
@@ -138,7 +140,7 @@
     font-size: 24px;
     letter-spacing: 2px;
     text-transform: capitalize;
-    color: var(--purple-color);
+    color: var(--white-color);
     margin: 0;
     font-family: var(--time-font);
     font-weight: 900;
@@ -191,7 +193,7 @@ input[type=text]:focus {
     font-family: var(--time-font);
     font-weight: 700;
     font-size: 18px;
-    color: var(--purple-color);
+    color: var(--white-color);
 }
 
 /* Background animation */
