@@ -31,6 +31,12 @@ function convertTime() {
     }
 }
 
+// Function to clear input and result
+function clearFields() {
+    document.getElementById("timeInput").value = ""; // Clear the input field
+    document.getElementById("result").innerText = ""; // Clear the result display
+}
+
 function updateClock() {
     const now = new Date();
     let hours = now.getHours();
@@ -83,6 +89,9 @@ updateClock2(); // Initial call to set the clock immediately
 
 // Event listener for button click
 document.getElementById("convertButton").addEventListener("click", convertTime);
+
+// Event listener for clear button click
+document.getElementById("clearButton").addEventListener("click", clearFields);
 
 // Event listener for Enter key press
 document.getElementById("timeInput").addEventListener("keydown", function (event) {
