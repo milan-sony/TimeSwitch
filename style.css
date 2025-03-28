@@ -194,6 +194,7 @@ input[type=text]:focus {
 
 .btn-div{
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .time-convert{
     text-align: center;
