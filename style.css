@@ -246,8 +246,31 @@ input[type=text]:focus {
         align-items: center;
     }
 
+    .timeconvert-head {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    input[type=text] {
+        width: 300px;
+        height: 40px;
+    }
+
+    .timeconvert-btn {
+        width: 100px;
+        height: 40px;
+    }
+
     .clocks {
-        display: none;
+        margin-bottom: 40px;
+    }
+
+    .clock {
+        letter-spacing: 1px;
+    }
+
+    .clock2 {
+        letter-spacing: 1px;
     }
 }
 
@@ -287,11 +310,16 @@ input[type=text]:focus {
     }
 
     .clock {
-        font-size: 32px;
+        letter-spacing: 1px;
     }
 
     .clock2 {
-        font-size: 32px;
+        letter-spacing: 1px;
+    }
+
+    .timeconvert-btn {
+        width: 100px;
+        height: 40px;
     }
 }
 
@@ -322,6 +350,13 @@ input[type=text]:focus {
         height: auto;
     }
 
+    .time-convert {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .clocks {
         margin-bottom: 40px;
     }
@@ -332,6 +367,10 @@ input[type=text]:focus {
 
     .clock2 {
         font-size: 36px;
+    }
+    .timeconvert-btn {
+        width: 100px;
+        height: 40px;
     }
 }
 
